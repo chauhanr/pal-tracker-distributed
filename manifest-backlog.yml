@@ -8,4 +8,4 @@ applications:
     TRUST_CERTS: https://api.sys.longs.pal.pivotal.io
   services:
   - tracker-backlog-database
-  tracker-service-registry
+  - tracker-service-registry
