@@ -60,7 +60,10 @@ public class FlowTest {
         allocationsServer.startWithDatabaseName("tracker_allocations_test");
         backlogServer.startWithDatabaseName("tracker_backlog_test");
         timesheetsServer.startWithDatabaseName("tracker_timesheets_test");
-        ApplicationServer.waitOnPorts("8881", "8882", "8883", "8884");
+        ApplicationServer.waitOnPorts("8881");
+        ApplicationServer.waitOnPorts("8882");
+        ApplicationServer.waitOnPorts("8883");
+        ApplicationServer.waitOnPorts("8884");
         TestScenarioSupport.clearAllDatabases();
     }
 
